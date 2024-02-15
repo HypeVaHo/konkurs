@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТК</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" sizes="16x16">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script> <!--JS слайдера -->
+    <script src="js/darktheme.js" defer></script> <!--JS переключения тем -->
+</head>
+
+<body>
+    <header> <!--Шапка сайта -->
+        <div class="container" id="header">
+            <img src="assets/logo.png" alt="" width="170" height="160"><!--Логотип сайта, взят с сайта колледжа -->
+            <h1>Автомобильно-Технический колледж</h1>
+        </div>
+        <button class="btn" id="on">Темная тема</button>
+        <button class="btn" id="off">Светлая тема</button>
+        <div class="container"><!--Ниже кнопки с переходами на страницы -->
+            <a href="index.html" type="button" class="btn">Инфо</a>
+            <a href="gallery.html" type="button" class="btn">Галерея</a>
+            <a href="teachers.html" type="button" class="btn">Преподаватели</a>
+            <a href="events.html" type="button" class="btn">Мероприятия</a>
+        </div>
+    </header>
+    <main class="container">
+
+        <div class="slider"><!--Слайдер -->
+            <div class="item"><!--1 слайд -->
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                    <p>>Автомобильно-технический колледж - это учебное заведение, которое предлагает программы обучения
+                        по автомобильным технологиям, техническому обслуживанию и ремонту автомобилей, а также другим
+                        связанным с автомобилями дисциплинам.</p>
+                    <p> >Эти программы могут включать курсы по механике,
+                        электронике, автомобильной инженерии, а также практическое обучение в мастерских и на реальных
+                        автомобилях.</p>
+                    <p> >Выпускники колледжа могут работать в автомобильной промышленности, автосервисах,
+                        транспортных компаниях или других предприятиях, связанных с автомобильной индустрией.</p>
+                </div>
+                <img src="assets/1этаж.jpg" alt="">
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="item"><!--2 слайд -->
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                    <p>>Обучение в АТК
+                        длится от двух до четырех лет в зависимости от выбранной специальности.</p>
+
+                </div>
+                <img src="assets/2этаж.jpg" alt="">
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="item"> <!--3 слайд -->
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                    <p>>После окончания колледжа
+                        студенты получают диплом о среднем профессиональном образовании.</p>
+                </div>
+                <img src="assets/3этаж.jpg" width="705px" height="820px" alt="">
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="arrow_mobile"> <!--Это кнопки переключения слайдов -->
+                <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+                <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+        </div>
+        <div class="container">
+            
+        </div>
+    </main>
+    <footer> <!-- Это подвал с ссылками на соцсети колледжа и автора проекта -->
+        <div class="cont">
+            <a href="#header" class="btn up">↑</a>
+            <h3 class="footer">
+                КГБ ПОУ "АТК" г. Уссурийск
+            </h3>
+            <h3 class="footer">Стукалин Иван Александрович</h3>
+            <a href="https://vk.com/hypevaho" type="button" class="btn">
+                Автор проекта(ВК)
+            </a>
+            <a href="https://vk.com/public217342369" type="button" class="btn">
+                Колледж(ВК)
+            </a>
+            <a href="https://ok.ru/group/70000001961078" type="button" class="btn">
+                Колледж(ОК)
+            </a>
+            <a href="https://t.me/atk_kollege" type="button" class="btn">
+                Колледж(ТГ)
+            </a>
+            <a href="https://pu51.info" type="button" class="btn">
+                Колледж(Сайт)
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
