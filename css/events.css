@@ -1,0 +1,91 @@
+.dark{
+  background-color: black;
+} /*Темная тема для сайта*/
+
+
+header {
+  outline: 2px dashed #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: gray;
+}/*Шапка*/
+
+h1 {
+  font-family: serif;
+  font-size: 50px;
+  color: white;
+}/*Название колледжа*/
+
+h2{
+  color: blueviolet;
+  font-size: 30px;
+}
+
+li{
+  color: blueviolet;
+  font-size: 23px;
+}
+
+p {
+  color: blueviolet;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+}/*Текст слайдера*/
+
+p:hover {
+  color: blue;
+  outline: 4px solid #ff0000;
+  transition: all 0.3s;
+}/*Наведение на текст*/
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: gray;
+}/* Все контейнера*/
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  margin: 1%;
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}/*Кнопки сайта*/
+
+.btn:hover {
+  background-color: rgb(98, 32, 160);
+  outline: 4px solid #ff0000;
+  transition: all 0.3s;
+}/*Наведение на кнопку*/
+
+h3 {
+  font-family: serif;
+  font-size: 40px;
+  color: aliceblue;
+}/*Текст в подвале сайта*/
+
+.cont {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  margin: auto;
+  position: absolute;
+}
+
+.up {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+} /*Прилипшая кнопка*/

@@ -1,0 +1,98 @@
+header {
+  outline: 2px dashed #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: gray;
+}/*Шапка*/
+
+h1 {
+  font-family: serif;
+  font-size: 50px;
+  color: white;
+}/*Тескст шапки*/
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}/*Контейнер*/
+
+.dark {
+  background-color: black;
+}/*Темная тема*/
+
+.up {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+} /*Прилипшая кнопка*/
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  margin: 1%;
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}/*Кнопки сайта*/
+
+.btn:hover {
+  background-color: rgb(98, 32, 160);
+  outline: 4px solid #ff0000;
+  transition: all 0.3s;
+}/*Наведение на кнопку*/
+
+.card {
+  background-color: #fff;
+  width: 247px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 40px #434040;
+
+  margin: auto;
+  margin-top: 100px;
+}/*Карточки*/
+
+.card-img {
+  border-radius: 11px;
+}/*Картинки в карточках*/
+
+.card-img:hover {
+  transform: scale(1.2);
+  transition: all 0.3ms;
+}/*Наведение на картинку*/
+
+.card-title {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}/*Название карточки(ФИО преподавателя)*/
+
+.card-sub {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 20px;
+}/*Должность преподавателя*/
+
+.footer {
+  font-family: serif;
+  font-size: 40px;
+  color: aliceblue;
+} /*Текст подвала*/
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  margin: auto;
+  position: absolute;
+} /*Подвал*/
