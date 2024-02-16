@@ -7,9 +7,9 @@ header {
 
 h1 {
   font-family: serif;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
-}/*Тескст шапки*/
+}/*Текст шапки*/
 
 .container {
   display: flex;
