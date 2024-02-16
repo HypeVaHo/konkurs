@@ -1,3 +1,4 @@
+
 .dark{
   background-color: black;
 }/*Темная тема сайта*/
@@ -162,14 +163,6 @@ p:hover {
   }
 }
 
-.cont {
-  display: flex;
-  align-items: center;
-  background-color: gray;
-  margin: auto;
-  position: absolute;
-}
-
 .up {
   display: block;
   text-align: center;
@@ -182,3 +175,32 @@ p:hover {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 } /*Прилипшая кнопка*/
+
+footer{
+  background-color: gray;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+}
