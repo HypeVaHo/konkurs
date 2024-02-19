@@ -28,10 +28,10 @@ li{
 }
 
 p {
-  color: blueviolet;
+  mix-blend-mode: lighten;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 23px;
-}/*Текст слайдера*/
+}/*Текст*/
 
 p:hover {
   color: blue;
@@ -66,8 +66,9 @@ p:hover {
 
 h3 {
   font-family: serif;
-  font-size: 40px;
+  font-size: 30px;
   color: aliceblue;
+  margin-left: 10px;
 }/*Текст в подвале сайта*/
 
 

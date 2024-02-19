@@ -18,8 +18,9 @@ h1 {
 }/*Текст шапки*/
 h3 {
   font-family: serif;
-  font-size: 40px;
+  font-size: 30px;
   color: aliceblue;
+  margin-left: 10px;
 }/*Текст подвала*/
 
 .btn {
@@ -49,7 +50,7 @@ h3 {
 p {
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: 33px;
+  font-size: 23px;
 }/*Текст слайдера*/
 
 p:hover {
