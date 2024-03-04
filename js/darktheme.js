@@ -1,9 +1,7 @@
 let bodyNode = document.querySelector(`body`);
-let onNode = document.querySelector(`#on`);
-let offNode = document.querySelector(`#off`);
-onNode.addEventListener(`click`, function(){
-    bodyNode.classList.add("dark")
-});
+let offNode = document.querySelector(`#theme`);
+
 offNode.addEventListener(`click`, function(){
-    bodyNode.classList.remove("dark")
+    bodyNode.classList.toggle("light");
+    bodyNode.classList.toggle("dark");
 });

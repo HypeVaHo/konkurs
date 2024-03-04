@@ -1,18 +1,28 @@
 header {
-  outline: 2px dashed #ccc;
   display: flex;
+  padding: auto;
+  margin: auto;
   justify-content: space-evenly;
-  background-color: gray;
+  background-color: black;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
 }/*Шапка*/
+
+span{
+  font-size: 30px;
+}
 
 h1 {
   margin-left: 10px;
-  font-family: serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 32px;
   color: white;
 }/*Текст шапки*/
 
 .container {
+  position: relative;
+  margin: auto;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -26,13 +36,15 @@ h1 {
 .up {
   display: block;
   text-align: center;
+  padding: 16px;
   transition: all 0.3s ease;
   font-size: 20px;
   position: fixed;
   top: 50%;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
+  left: 95%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 } /*Прилипшая кнопка*/
 
 .btn {
@@ -48,9 +60,36 @@ h1 {
 
 .btn:hover {
   background-color: rgb(98, 32, 160);
-  outline: 4px solid #ff0000;
   transition: all 0.3s;
 }/*Наведение на кнопку*/
+
+.btn-header {
+  display: inline-block;
+  padding: 3px;
+  text-decoration: none;
+  margin: 1%;
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}/*Кнопки сайта*/
+
+.btn-header:hover {
+  background-color: rgb(98, 32, 160);
+  transition: all 0.3s;
+}/*Наведение на кнопку*/
+
+.header-btn{
+  position: fixed;
+  top: 30%;
+  right: 95%;
+}
+
+.header-btn-two{
+  position: fixed;
+  top: 38%;
+  right: 95%;
+}
 
 .card {
   background-color: #fff;
@@ -73,34 +112,38 @@ h1 {
 }/*Наведение на картинку*/
 
 .card-title {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   margin-top: 20px;
   font-size: 14px;
   font-weight: 500;
 }/*Название карточки(ФИО преподавателя)*/
 
 .card-sub {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 12px;
   font-weight: 300;
   margin-top: 20px;
 }/*Должность преподавателя*/
 
 .footer {
-  font-family: serif;
-  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   color: aliceblue;
   margin-left: 10px;
 } /*Текст подвала*/
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  background-color: gray;
-  margin: auto;
-  position: absolute;
-} /*Подвал*/
 
 footer{
-  background-color: gray;
+  background-color: black;
+}
+
+a{
+  margin-left: 10px;
+}
+
+a:hover{
+  transform: scale(1.2);
+  transition: all 0.4ms;
 }
 
 @media (min-width: 576px) {

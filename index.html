@@ -9,21 +9,19 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script> <!--JS слайдера -->
     <script src="js/darktheme.js" defer></script> <!--JS переключения тем -->
+    <script src="https://kit.fontawesome.com/99802334db.js" crossorigin="anonymous"></script> <!--Библиотека иконок-->
+
 </head>
 
-<body>
+<body class="light">
     <header> <!--Шапка сайта -->
         <div class="container" id="header">
-            <img src="assets/logo.png" class="logo" alt="" width="120" height="120"><!--Логотип сайта, взят с сайта колледжа -->
+            <img src="assets/logo.png" class="logo" alt="" width="120"
+                height="120"><!--Логотип сайта, взят с сайта колледжа -->
         </div>
-        <div class="container"><!--Ниже кнопки с переходами на страницы и переключением тем -->
-            <button class="btn" id="on">Темная тема</button>
-            <button class="btn" id="off">Светлая тема</button>
-            <div class="container"> <a href="index.html" type="button" class="btn">Инфо</a>
-                <a href="gallery.html" type="button" class="btn">Галерея</a>
-                <a href="teachers.html" type="button" class="btn">Учителя</a>
-                <a href="events.html" type="button" class="btn">Эвенты</a>
-            </div>
+        <div class="container"><!--Ниже кнопки с переключением тем -->
+            <button id="theme"><span>◐</span></button>
+
             <div class="container">
                 <h1>Автомобильно-Технический колледж</h1>
             </div>
@@ -32,16 +30,19 @@
     <main class="container">
 
         <div class="slider"><!--Слайдер -->
+            <div class="arrow_mobile"> <!--Это кнопки переключения слайдов -->
+                <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+            </div>
             <div class="item"><!--1 слайд -->
                 <a class="previous" onclick="previousSlide()">&#10094;</a>
                 <div class="item_col">
-                    <p>>Автомобильно-технический колледж - это учебное заведение, которое предлагает программы обучения
+                    <p>Автомобильно-технический колледж - это учебное заведение, которое предлагает программы обучения
                         по автомобильным технологиям, техническому обслуживанию и ремонту автомобилей, а также другим
                         связанным с автомобилями дисциплинам.</p>
-                    <p> >Эти программы могут включать курсы по механике,
+                    <p> Эти программы могут включать курсы по механике,
                         электронике, автомобильной инженерии, а также практическое обучение в мастерских и на реальных
                         автомобилях.</p>
-                    <p> >Выпускники колледжа могут работать в автомобильной промышленности, автосервисах,
+                    <p> Выпускники колледжа могут работать в автомобильной промышленности, автосервисах,
                         транспортных компаниях или других предприятиях, связанных с автомобильной индустрией.</p>
                 </div>
                 <img src="assets/1этаж.jpg" alt="">
@@ -51,7 +52,7 @@
             <div class="item"><!--2 слайд -->
                 <a class="previous" onclick="previousSlide()">&#10094;</a>
                 <div class="item_col">
-                    <p>>Обучение в АТК
+                    <p>Обучение в АТК
                         длится от двух до четырех лет в зависимости от выбранной специальности.</p>
 
                 </div>
@@ -62,7 +63,7 @@
             <div class="item"> <!--3 слайд -->
                 <a class="previous" onclick="previousSlide()">&#10094;</a>
                 <div class="item_col">
-                    <p>>После окончания колледжа
+                    <p>После окончания колледжа
                         студенты получают диплом о среднем профессиональном образовании.</p>
                 </div>
                 <img src="assets/3этаж.jpg" width="705px" height="820px" alt="">
@@ -70,33 +71,49 @@
             </div>
 
             <div class="arrow_mobile"> <!--Это кнопки переключения слайдов -->
-                <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
                 <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
             </div>
         </div>
     </main>
     <footer> <!-- Это подвал с ссылками на соцсети колледжа и автора проекта -->
         <div class="container">
+            <div class="header-btn">
+                <a href="index.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Главная">🏠</a>
+                <a href="gallery.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Кабинеты">🚪</a>
+
+            </div>
+            <div class="header-btn-two">
+                <a href="teachers.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Преподаватели">👨‍🏫</a>
+                <a href="events.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Мероприятия">🎊</a>
+            </div>
             <a href="#header" class="btn up">↑</a>
-            <h3 class="footer">
-                КГБ ПОУ "АТК" г. Уссурийск
-            </h3>
-            <h3 class="footer">Стукалин Иван Александрович</h3>
-            <a href="https://vk.com/hypevaho" type="button" class="btn">
-                Автор проекта(ВК)
-            </a>
-            <a href="https://vk.com/public217342369" type="button" class="btn">
-                Колледж(ВК)
-            </a>
-            <a href="https://ok.ru/group/70000001961078" type="button" class="btn">
-                Колледж(ОК)
-            </a>
-            <a href="https://t.me/atk_kollege" type="button" class="btn">
-                Колледж(ТГ)
-            </a>
-            <a href="https://pu51.info" type="button" class="btn">
-                Колледж(Сайт)
-            </a>
+            <div class="container">
+                <h3 class="footer">
+                    КГБ ПОУ "АТК" г. Уссурийск
+                </h3>
+            </div>
+            <div class="container">
+                <h3 class="footer"> ©Стукалин Иван Александрович</h3>
+                <a href="https://vk.com/hypevaho" type="button">
+                    <i class="fa-brands fa-vk fa-2xl" style="color: #0000ff;"></i>
+                </a>
+            </div>
+
+            <div class="container">
+                <h3>Соцсети АТК:</h3>
+                <a href="https://vk.com/public217342369" type="button">
+                    <i class="fa-brands fa-vk fa-2xl" style="color: #0000ff;"></i>
+                </a>
+                <a href="https://ok.ru/group/70000001961078" type="button">
+                    <i class="fa-brands fa-odnoklassniki fa-2xl" style="color: #ff8040;"></i>
+                </a>
+                <a href="https://t.me/atk_kollege" type="button">
+                    <i class="fa-brands fa-telegram fa-2xl"></i>
+                </a>
+                <a href="https://pu51.info" type="button">
+                    <i class="fa-solid fa-sitemap fa-2xl" style="color: #ffffff;"></i>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

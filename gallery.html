@@ -8,21 +8,18 @@
     <link rel="icon" type="image/png" href="assets/logo.png" sizes="16x16">
     <link rel="stylesheet" href="css/gallery.css">
     <script src="js/darktheme.js" defer></script> <!--JS переключения тем -->
+    <script src="https://kit.fontawesome.com/99802334db.js" crossorigin="anonymous"></script> <!--Библиотека иконок-->
 </head>
 
 <body>
     <header> <!--Шапка сайта -->
         <div class="container" id="header">
-            <img src="assets/logo.png" class="logo" alt="" width="120" height="120"><!--Логотип сайта, взят с сайта колледжа -->
+            <img src="assets/logo.png" class="logo" alt="" width="120"
+                height="120"><!--Логотип сайта, взят с сайта колледжа -->
         </div>
         <div class="container"><!--Ниже кнопки с переходами на страницы и переключением тем -->
-            <button class="btn" id="on">Темная тема</button>
-            <button class="btn" id="off">Светлая тема</button>
-            <div class="container"> <a href="index.html" type="button" class="btn">Инфо</a>
-                <a href="gallery.html" type="button" class="btn">Галерея</a>
-                <a href="teachers.html" type="button" class="btn">Учителя</a>
-                <a href="events.html" type="button" class="btn">Эвенты</a>
-            </div>
+            <button id="theme"><span>◐</span></button>
+
             <div class="container">
                 <h1>Автомобильно-Технический колледж</h1>
             </div>
@@ -34,104 +31,409 @@
         <p>1 этаж</p>
         <div class="container">
 
-            <img src="assets/100.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="100 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/101.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="101 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/102.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="102 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/гардероб.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="Гардероб" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/100.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>100 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет материаловедения</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/101.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>101 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет устройства автомобилей</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/102.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>102 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Учебный кабинет</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/гардероб.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>Гардероб</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Гардероб</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <p>2 этаж</p>
         <div class="container">
-            <img src="assets/актовый.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="Актовый зал" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/201.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="201 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/202.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="202 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/203.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="203 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/204.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="204 Кабинет" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/актовый.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>Актовый зал</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Актовый зал</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/201.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>201 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Центр ДПО и ПО</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/202.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>202 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Методист</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/203.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>203 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет истории</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/204.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>204 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Приемная директора</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <img src="assets/205.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="205 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/206.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="206 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/207.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="207 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/208.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="208 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/209.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="209 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/211.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="211 Кабинет" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/205.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>205 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Учебная часть</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/206.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>206 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Преподавательская</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/207.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>207 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет заместителя директора по упр</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/208.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>208 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>кабинет заместителя заведующего практикой</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/209.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>209 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет физики</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/211.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>211 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Лаборатория связанная с пк</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <img src="assets/212.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="212 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/213.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="213 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/214.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="214 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/215.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="215 и 216 Кабинет" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/212.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>212 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Бухгалтерия</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/213.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>213 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет заместителя директора по ув и ср</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/214.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>214 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет химии</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/215.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>215 и 216 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Лаборатория ПО и кабинет метрологии</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <p>3 этаж</p>
         <div class="container">
-            <img src="assets/300.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="300 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/301.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="301 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/302.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="302 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/304.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="304 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/305.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="305 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/медкаб.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="Медицинский Кабинет"
-                alt="" width="400px" class="img-gallery">
-            <img src="assets/307.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="307 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/308.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="308 Кабинет" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/300.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>300 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет математики</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/301.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>301 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет английского языка</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/302.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>302 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет социально-экономических дисциплин</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/303.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>303 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет правил безопасности и дорожного движения</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/304.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>304 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет русского языка и литературы</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/305.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>305 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет оказания первичной медицинско-санитарной помощи</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/медкаб.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>Медкабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Медицинский кабинет</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/307.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>307 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Лаборатория</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <img src="assets/309.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="309 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/310.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="310 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/311.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="311 Кабинет" alt=""
-                width="400px" class="img-gallery">
-            <img src="assets/312.jpg" data-bs-toggle="tooltip" data-bs-placement="top" title="312 Кабинет" alt=""
-                width="400px" class="img-gallery">
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/308.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>308 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Музей</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/309.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>309 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет обществознания</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/310.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>310 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет БЖ и ОТ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/311.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>311 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Кабинет информатики</h3>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper'>
+                <div class='card'>
+                    <img class='card-img' src='assets/312.jpg' width="247px" height="247px">
+                    <div class='card-title'>
+                        <h2>312 кабинет</h2>
+                    </div>
+                    <div class='card-sub'>
+                        <h3>Библиотека</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer> <!-- Это подвал с ссылками на соцсети колледжа и автора проекта -->
         <div class="container">
+            <div class="header-btn">
+                <a href="index.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Главная">🏠</a>
+                <a href="gallery.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Кабинеты">🚪</a>
+            </div>
+            <div class="header-btn-two">
+                <a href="teachers.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Преподаватели">👨‍🏫</a>
+                <a href="events.html" type="button" class="btn-header" data-bs-toggle="tooltip" data-bs-placement="right"title="Мероприятия">🎊</a>
+            </div>
             <a href="#header" class="btn up">↑</a>
-            <h3 class="footer">
-                КГБ ПОУ "АТК" г. Уссурийск
-            </h3>
-            <h3 class="footer">Стукалин Иван Александрович</h3>
-            <a href="https://vk.com/hypevaho" type="button" class="btn">
-                Автор проекта(ВК)
-            </a>
-            <a href="https://vk.com/public217342369" type="button" class="btn">
-                Колледж(ВК)
-            </a>
-            <a href="https://ok.ru/group/70000001961078" type="button" class="btn">
-                Колледж(ОК)
-            </a>
-            <a href="https://t.me/atk_kollege" type="button" class="btn">
-                Колледж(ТГ)
-            </a>
-            <a href="https://pu51.info" type="button" class="btn">
-                Колледж(Сайт)
-            </a>
+            <div class="container">
+                <h3 class="footer">
+                    КГБ ПОУ "АТК" г. Уссурийск
+                </h3>
+            </div>
+            <div class="container">
+                <h3 class="footer"> ©Стукалин Иван Александрович</h3>
+                <a href="https://vk.com/hypevaho" type="button">
+                    <i class="fa-brands fa-vk fa-2xl" style="color: #0000ff;"></i>
+                </a>
+            </div>
+
+            <div class="container">
+                <h3>Соцсети АТК:</h3>
+                <a href="https://vk.com/public217342369" type="button" >
+                    <i class="fa-brands fa-vk fa-2xl" style="color: #0000ff;"></i>
+                </a>
+                <a href="https://ok.ru/group/70000001961078" type="button">
+                    <i class="fa-brands fa-odnoklassniki fa-2xl" style="color: #ff8040;"></i>
+                </a>
+                <a href="https://t.me/atk_kollege" type="button">
+                    <i class="fa-brands fa-telegram fa-2xl"></i>
+                </a>
+                <a href="https://pu51.info" type="button">
+                    <i class="fa-solid fa-sitemap fa-2xl" style="color: #ffffff;"></i>
+                </a>
         </div>
     </footer>
 </body>
