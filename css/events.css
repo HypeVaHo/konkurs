@@ -82,49 +82,62 @@ h2{
   background-color: black;
 }/* Все контейнера*/
 
-.btn {
+.btn-main {
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
   margin: 1%;
-  background-color: blueviolet;
+  background-color: black;
   color: aliceblue;
   border-radius: 5px;
   cursor: pointer;
 }/*Кнопки сайта*/
 
-.btn:hover {
-  background-color: rgb(98, 32, 160);
+.btn-main:hover {
+  background-color: rgb(79, 79, 79);
   transition: all 0.3s;
 }/*Наведение на кнопку*/
-
-.btn-header {
-  display: inline-block;
-  padding: 3px;
-  text-decoration: none;
-  margin: 1%;
-  background-color: blueviolet;
-  color: aliceblue;
-  border-radius: 5px;
-  cursor: pointer;
-}/*Кнопки сайта*/
-
-.btn-header:hover {
-  background-color: rgb(98, 32, 160);
-  transition: all 0.3s;
-}/*Наведение на кнопку*/
-
-.header-btn{
-  position: fixed;
-  top: 30%;
-  right: 95%;
-}
 
 .header-btn-two{
   position: fixed;
   top: 38%;
   right: 95%;
 }
+.btn {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  margin: 1%;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}/*Кнопки сайта*/
+
+.btn:hover {
+  background-color: rgb(79, 79, 79);
+  transition: all 0.3s;
+}/*Наведение на кнопку*/
+
+.btn-header {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 3px;
+  text-decoration: none;
+  margin: 1%;
+  background-color: white;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}/*Кнопки сайта*/
+
+.btn-header:hover {
+  background-color: rgb(0, 0, 0);
+  transition: all 0.3s;
+}/*Наведение на кнопку*/
 
 .card {
   background-color: #fff;
@@ -181,6 +194,17 @@ a{
 a:hover{
   transform: scale(1.2);
   transition: all 0.4ms;
+}
+
+footer{
+  display: flex;
+  padding: auto;
+  margin: auto;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
 }
 
 @media (min-width: 576px) {

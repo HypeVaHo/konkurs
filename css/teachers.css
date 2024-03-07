@@ -24,7 +24,7 @@ h1 {
   position: relative;
   margin: auto;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }/*Контейнер*/
@@ -41,55 +41,47 @@ h1 {
   font-size: 20px;
   position: fixed;
   top: 50%;
-  left: 95%;
+  left: 90%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 } /*Прилипшая кнопка*/
 
 .btn {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
   margin: 1%;
-  background-color: blueviolet;
+  background-color: black;
   color: aliceblue;
   border-radius: 5px;
   cursor: pointer;
 }/*Кнопки сайта*/
 
 .btn:hover {
-  background-color: rgb(98, 32, 160);
+  background-color: rgb(79, 79, 79);
   transition: all 0.3s;
 }/*Наведение на кнопку*/
 
 .btn-header {
+  width: 40px;
+  height: 40px;
   display: inline-block;
   padding: 3px;
   text-decoration: none;
   margin: 1%;
-  background-color: blueviolet;
+  background-color: white;
   color: aliceblue;
   border-radius: 5px;
   cursor: pointer;
 }/*Кнопки сайта*/
 
 .btn-header:hover {
-  background-color: rgb(98, 32, 160);
+  background-color: rgb(0, 0, 0);
   transition: all 0.3s;
 }/*Наведение на кнопку*/
-
-.header-btn{
-  position: fixed;
-  top: 30%;
-  right: 95%;
-}
-
-.header-btn-two{
-  position: fixed;
-  top: 38%;
-  right: 95%;
-}
 
 .card {
   background-color: #fff;
@@ -134,7 +126,14 @@ h1 {
 
 
 footer{
+  display: flex;
+  padding: auto;
+  margin: auto;
+  justify-content: space-evenly;
   background-color: black;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
 }
 
 a{
